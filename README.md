@@ -9,6 +9,8 @@ You could buid a smart IR remote controller using ESP32:
 
 ![ESP32](https://diysmartmatter.com/wp-content/uploads/2023/02/pcb.jpg)
 
+![Diagram](https://diysmartmatter.com/images/20221225150838.png)
+
 that can be used by Apple HomeKit as a Heater/Cooler accessory. 
 
 ![HomeKit](https://diysmartmatter.com/images/20221123195125.png)
