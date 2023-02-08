@@ -32,6 +32,8 @@
 #include "ir_Daikin468.h"
 const uint16_t kIrLed = 4;  // ESP8266 GPIO pin to use. Recommended: 4 (D2).
 IRDaikin468 daikin=IRDaikin468(kIrLed);
+uint8_t _CoolingThresholdTemperature = 28; //HK has specific temp-value for each mode 
+uint8_t _HeatingThresholdTemperature = 22; //HK has specific temp-value for each mode
 
 //DHT sensor
 #include "DHT20.h"
@@ -71,17 +73,21 @@ void onMessageReceived(const String& topic, const String& message) {
     client->publish(DEBUG,daikin.toChars());
   }else if(command.equals("TargetHeaterCoolerState")){
     if(message.equalsIgnoreCase("COOL")) {
+      daikin.setTemp(_CoolingThresholdTemperature);//each mode has specific temp
       daikin.setMode(kDaikinCool);
     }
     if(message.equalsIgnoreCase("HEAT")) {
+      daikin.setTemp(_HeatingThresholdTemperature);//each mode has specific temp
       daikin.setMode(kDaikinHeat);
     }
   }else if(command.equals("CoolingThresholdTemperature")){
     daikin.setTemp(message.toInt());
+    _CoolingThresholdTemperature=daikin.getTemp(); //may be capped
     daikin.send(0);
     client->publish(DEBUG,daikin.toChars());
   }else if(command.equals("HeatingThresholdTemperature")){
     daikin.setTemp(message.toInt());
+    _HeatingThresholdTemperature=daikin.getTemp(); //may be capped
     daikin.send(0);
     client->publish(DEBUG,daikin.toChars());
   }else if(command.equals("SwingMode")){
