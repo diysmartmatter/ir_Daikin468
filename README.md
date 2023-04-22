@@ -17,16 +17,16 @@ that can be used by Apple HomeKit as a Heater/Cooler accessory.
 
 # Prerequisite
 
-- Homebridge
-- MQTT (Mosquitto)
-- Arduino IDE
-- ESP32 with IR LED(s)
-- ESP32 Arduino (Board manager)
-- Arduino libraries:
--- IRremoteESP8266 
--- ArduinoOTA
--- EspMQTTClient
--- DHT20
++ Homebridge
++ MQTT (Mosquitto)
++ Arduino IDE
++ ESP32 with IR LED(s)
++ ESP32 Arduino (Board manager)
++ Arduino libraries:
+- IRremoteESP8266 
+- ArduinoOTA
+- EspMQTTClient
+- DHT20
 
 
 # How to use
