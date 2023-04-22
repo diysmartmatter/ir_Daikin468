@@ -14,3 +14,20 @@ You could buid a smart IR remote controller using ESP32:
 that can be used by Apple HomeKit as a Heater/Cooler accessory. 
 
 ![HomeKit](https://diysmartmatter.com/images/20221123195125.png)
+
+# Prerequisite
+
+- Homebridge
+- MQTT (Mosquitto)
+- Arduino IDE
+- ESP32 with IR LED(s)
+- ESP32 Arduino (Board manager)
+- Arduino libraries:
+-- IRremoteESP8266 
+-- ArduinoOTA
+-- EspMQTTClient
+-- DHT20
+
+
+# How to use
+
