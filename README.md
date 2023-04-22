@@ -21,6 +21,8 @@ The IRremoteESP8266 library has a very excellent class for Daikin air-conditione
 
 # Prerequisite
 
+![Configuration](https://diysmartmatter.com/wp-content/uploads/2023/04/setup_E.jpg)
+
 - Homebridge
 - MQTT (Mosquitto)
 - Arduino IDE
