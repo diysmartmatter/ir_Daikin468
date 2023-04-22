@@ -17,12 +17,12 @@ that can be used by Apple HomeKit as a Heater/Cooler accessory.
 
 # Prerequisite
 
-+ Homebridge
-+ MQTT (Mosquitto)
-+ Arduino IDE
-+ ESP32 with IR LED(s)
-+ ESP32 Arduino (Board manager)
-+ Arduino libraries:
+- Homebridge
+- MQTT (Mosquitto)
+- Arduino IDE
+- ESP32 with IR LED(s)
+- ESP32 Arduino (Board manager)
+- Arduino libraries:
 - IRremoteESP8266 
 - ArduinoOTA
 - EspMQTTClient
@@ -31,3 +31,5 @@ that can be used by Apple HomeKit as a Heater/Cooler accessory.
 
 # How to use
 
+- Put IRremoteESP8266.cpp and IRremoteESP8266.h in your IRremoteESP3266 source directry, such as ~/Documents/Arduino/libraries/IRremoteESP8266/src/
+- Create an Arduino sketch using example.ino. (WiFi info and address should be changed to yours)
