@@ -15,6 +15,10 @@ that can be used by Apple HomeKit as a Heater/Cooler accessory.
 
 ![HomeKit](https://diysmartmatter.com/images/20221123195125.png)
 
+# Background
+
+The IRremoteESP8266 library has a very excellent class for Daikin air-conditioners named IRDaikin2, although some of data bits in the IR data slightly differ from my Daikin products using an ARC468A3 remote controller. This class (IRremoteESP8266) is created based on the IRDaikin2 class. Note that only essential methods required by HomeKit Heater Cooler Accessory are implemented. 
+
 # Prerequisite
 
 - Homebridge
