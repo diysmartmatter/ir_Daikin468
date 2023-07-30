@@ -39,8 +39,8 @@ const uint16_t kDaikin468ZeroSpace = 420;
 const uint16_t kDaikin468Section1Length = 20;
 const uint16_t kDaikin468Section2Length = 19;
 const uint8_t kDaikin468Tolerance = 5;  // Extra percentage tolerance
-const uint8_t kDaikin468LeaderLength=10;
-const uint16_t kDaikin468Leader[kDaikin468LeaderLength]= { 1260, 420, 420, 420, 420, 420, 420, 420, 420, 25300 };
+const uint8_t kDaikin468LeaderLength=12;
+const uint16_t kDaikin468Leader[kDaikin468LeaderLength]= { 420, 420, 420, 420, 420, 420, 420, 420, 420, 420, 420, 25300 };
 
 const uint8_t kDaikin468Fan1 = 3;
 const uint8_t kDaikin468Fan2 = 4;
